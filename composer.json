@@ -1,0 +1,38 @@
+{
+    "name": "dhii/code-gen-abstract",
+    "description": "Abstract base classes for CodeGen.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Dhii Team",
+            "email": "development@dhii.co"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "dhii/blueprint-abstract": "dev-master"
+    },
+    "require-dev": {
+        "dhii/php-cs-fixer-config": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "Dhii\\CodeGen\\": "src/"
+        }
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/Dhii/blueprint"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/Dhii/blueprint-abstract"
+        },
+        {
+            "url": "https://github.com/Dhii/php-cs-fixer-config.git",
+            "type": "git"
+        }
+    ]
+}

@@ -7,7 +7,7 @@ use Dhii\Blueprint\BlueprintInterface;
 use Dhii\CodeGen\Blueprint\ConstructBlueprintInterface;
 
 /**
- * Description of AbstractConstructBuilder.
+ * Abstract implementation of a construct builder.
  *
  * @author Miguel Muscat <miguelmuscat93@gmail.com>
  */

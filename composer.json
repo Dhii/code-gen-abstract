@@ -11,7 +11,8 @@
     ],
     "minimum-stability": "dev",
     "require": {
-        "dhii/blueprint-abstract": "dev-master"
+        "dhii/blueprint-abstract": "dev-master",
+        "container-interop/container-interop": "^1.1"
     },
     "require-dev": {
         "dhii/php-cs-fixer-config": "dev-master"

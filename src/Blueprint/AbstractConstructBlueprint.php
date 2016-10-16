@@ -59,7 +59,7 @@ abstract class AbstractConstructBlueprint implements ConstructBlueprintInterface
         $data = $this->_getBuildData();
 
         if ($recursive) {
-            $data = array_map(array($this, 'getBuildDataHelper'), $data, $recursive);
+            $data = array_map(array($this, 'getBuildDataHelper'), $data);
         }
 
         return $data;
@@ -68,15 +68,14 @@ abstract class AbstractConstructBlueprint implements ConstructBlueprintInterface
     /**
      * Helper method for `array_map()` usage in {@link AbstractConstructBlueprint::getBuildData()}.
      *
-     * @param BlueprintInterface $item      The current iteration item.
-     * @param booean             $recursive If true, the build data resolution will be recursive.
+     * @param BlueprintInterface $item The current iteration item.
      *
      * @return mixed The blueprint's build data if $item was a blueprint, or $item if it wasn't a blueprint.
      */
-    protected function getBuildDataHelper($item, $recursive)
+    protected function getBuildDataHelper($item)
     {
         return ($item instanceof BlueprintInterface)
-            ? $item->getBuildData($recursive)
+            ? $item->getBuildData(true)
             : $item;
     }
 

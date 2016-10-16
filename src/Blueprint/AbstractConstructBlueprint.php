@@ -14,12 +14,12 @@ abstract class AbstractConstructBlueprint implements ConstructBlueprintInterface
     /**
      * The default build type - only used if the {@link AbstractConstructBlueprint::buildType} property is null.
      */
-    const DEFAULT_BUILD_TYPE = '';
+    const DEFAULT_BUILD_TYPE = 'construct';
 
     /**
      * The type of construct described by this blueprint.
      *
-     * If null, the {@link AbstractConstructBlueprint::BUILD_TYPE} constant is used.
+     * If null, the {@link AbstractConstructBlueprint::DEFAULT_BUILD_TYPE} constant is used.
      *
      * @var string|null
      */

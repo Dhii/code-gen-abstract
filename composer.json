@@ -15,7 +15,9 @@
         "container-interop/container-interop": "^1.1"
     },
     "require-dev": {
-        "dhii/php-cs-fixer-config": "dev-master"
+        "dhii/php-cs-fixer-config": "dev-master",
+        "phpunit/phpunit": "^4.8",
+        "ptrofimov/xpmock": "^1.1"
     },
     "autoload": {
         "psr-4": {
